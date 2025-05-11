@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  line-height: 21px;
+  font-size: 16px;
+}
+.happy-travels-card {
+    padding: 60px 20px;
+}
+h1, 
+h2{
+    margin: 0;
+}
+.headline-travels {
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.headline-services {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 60px  ;
+}
+
+.text {
+  text-align: center;
+  color: gray;
+  font-weight: normal;
+  margin: 15px;
+}
+.line{
+    width: 60px;
+    border:2px solid #407BFF;
+    margin: 10px auto 30px auto;
+}
+
+/*Happy traveler picture*/
+.happy-traveler {
+  margin: 0 55px;  
+  justify-content: center;
+}  
+
+.happy-traveler-pic {
+  width: 100%;  
+}  
+
+
+/*Buttons*/
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
+    justify-self: center;
+    margin: 30px;
+}
+.button{
+padding: 10px 30px;
+border-radius: 20px;
+color: white;
+text-decoration: none;
+display: inline;
+justify-self: center;
+text-align: center;
+font-size: 14px;
+
+}
+.button-adventure{
+ background-color: #407BFF;   
+}
+.button-chill{
+background-color: #8B8B8B;
+}
+
+/*Services*/
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  display: flex;
+ 
+  gap: 30px;
+ 
+  width: 100%;
+  min-height: 80px;
+ 
+  border: 1px solid #fafafa;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 6px #407bff1f;
+  border-radius: 10px;
+
+}
+.icon{
+    max-width: 40px;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-description {
+  align-self: center;
+   color: #8B8B8B;
+ font-size: 13px;
+}
+
+@media screen and (min-width: 640px) {
+   
+    .buttons{
+
+    flex-direction: row;
+     gap: 20px;
+
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-basis: ;
+  gap: 20px;
+}
+
+
+.service-card {
+flex-direction: column;
+padding: 40px;
+text-align: center;
+}
+
+}
