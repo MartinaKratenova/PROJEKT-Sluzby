@@ -157,6 +157,10 @@ h2 {
     width: 425px;
     order: 2;
     flex-basis: 55%;
+
+  }
+  .happy-traveler-img{
+    max-height: 400px;
   }
 
   .header {
@@ -174,6 +178,7 @@ h2 {
 
   .headline-travels {
     align-self: first baseline;
+    margin-top: 70px;
   }
   .line {
     align-self: first baseline;
