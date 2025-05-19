@@ -29,6 +29,16 @@ h2 {
   margin-top: 40px;
 }
 
+.headline-travels::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #407bff;
+  justify-self: center;
+  margin: 10px auto 30px auto;
+}
+
 .headline-services {
   text-align: center;
   font-size: 16px;
@@ -39,20 +49,12 @@ h2 {
   text-align: center;
   color: gray;
   font-weight: 300;
-  margin: 15px;
-}
-.line {
-  width: 60px;
-  border: 2px solid #407bff;
-  margin: 10px auto 30px auto;
+  margin: 15px auto;
 }
 
 /*Happy traveler picture*/
 .happy-traveler {
   margin: 0 auto;
-  /* background-image: url(images/happy-traveler.svg);
-  background-repeat: no-repeat; */
-
   width: 350px;
 }
 
@@ -93,7 +95,6 @@ h2 {
   flex-direction: column;
   gap: 20px;
   justify-items: stretch;
- 
 }
 
 .service-card {
@@ -110,6 +111,7 @@ h2 {
   background-color: white;
   box-shadow: 0px 4px 6px #407bff1f;
   border-radius: 10px;
+ 
 }
 
 .icon {
@@ -125,6 +127,10 @@ h2 {
 }
 
 @media screen and (min-width: 640px) {
+ .happy-travels-card{
+   margin: auto;
+
+ }
   .happy-traveler {
     width: 400px;
   }
@@ -132,56 +138,75 @@ h2 {
   .buttons {
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
   }
 
   .services {
     display: flex;
     flex-direction: row;
-    flex: 1 1 calc(100% / 3);
+
     gap: 20px;
+   
+    justify-content: center;
   }
 
   .service-card {
     flex-direction: column;
     padding: 40px 20px;
     text-align: center;
+    flex: 0 0 calc(100%/3);
+ 
+  }
+  .agency-services-card{
+    flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: calc(100%/3);
+  }
+  .text{
+    width: 460px;
+    align-content: center;
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1100px) {
   .happy-travels-card {
     padding: 60px 80px;
+    width: 1200px;
+    margin: auto;
   }
-
-  .happy-traveler {
-    width: 425px;
-    order: 2;
-    flex-basis: 55%;
-
-  }
-  .happy-traveler-img{
-    max-height: 400px;
-  }
-
   .header {
     display: flex;
     padding: 0;
-    gap: 95px;
+    gap: 60px;
   }
+  .happy-traveler {
+    
+    order: 2;
+    flex-basis: 490px;
+    justify-content: center;
+  }
+  .happy-traveler-img {
+    max-height: 400px;
+    max-width: 425px;
+  }
+
   .header-text {
     order: 1;
     display: flex;
     flex-direction: column;
     padding: 0;
-    flex-basis: 66%;
+    width: 490px;
   }
+
+
 
   .headline-travels {
     align-self: first baseline;
     margin-top: 70px;
   }
-  .line {
+  .headline-travels::after {
     align-self: first baseline;
+    justify-self: left;
     margin: 10px 0 30px 0;
   }
 
@@ -194,13 +219,13 @@ h2 {
   .buttons {
     align-self: first baseline;
     margin: 30px 0 40px 0;
+    font-size: 14px;
   }
 
   .services {
-     gap: 20px;
+    gap: 20px;
     margin: 40px 0;
-    
-    flex-basis: 60%;
+
   }
 
   .services-agency,
@@ -208,11 +233,11 @@ h2 {
     display: flex;
     gap: 60px;
   }
-  
+
   .services-description {
     display: flex;
     flex-direction: column;
-    flex-basis: 40%;
+    width: 430px;
   }
 
   .headline-services {
