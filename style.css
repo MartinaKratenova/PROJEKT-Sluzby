@@ -66,10 +66,12 @@ h2 {
 .buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
+
+  align-items: center;
   align-self: center;
   justify-self: center;
+
   margin: 30px;
 }
 .button {
@@ -77,6 +79,7 @@ h2 {
   border-radius: 20px;
   color: white;
   text-decoration: none;
+
   display: inline;
   justify-self: center;
   text-align: center;
@@ -111,7 +114,6 @@ h2 {
   background-color: white;
   box-shadow: 0px 4px 6px #407bff1f;
   border-radius: 10px;
- 
 }
 
 .icon {
@@ -127,10 +129,9 @@ h2 {
 }
 
 @media screen and (min-width: 640px) {
- .happy-travels-card{
-   margin: auto;
-
- }
+  .happy-travels-card {
+    margin: auto;
+  }
   .happy-traveler {
     width: 400px;
   }
@@ -146,7 +147,7 @@ h2 {
     flex-direction: row;
 
     gap: 20px;
-   
+
     justify-content: center;
   }
 
@@ -154,15 +155,10 @@ h2 {
     flex-direction: column;
     padding: 40px 20px;
     text-align: center;
-    flex: 0 0 calc(100%/3);
- 
+    width: 230px;
   }
-  .agency-services-card{
-    flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: calc(100%/3);
-  }
-  .text{
+
+  .text {
     width: 460px;
     align-content: center;
   }
@@ -180,7 +176,6 @@ h2 {
     gap: 60px;
   }
   .happy-traveler {
-    
     order: 2;
     flex-basis: 490px;
     justify-content: center;
@@ -197,8 +192,6 @@ h2 {
     padding: 0;
     width: 490px;
   }
-
-
 
   .headline-travels {
     align-self: first baseline;
@@ -225,9 +218,10 @@ h2 {
   .services {
     gap: 20px;
     margin: 40px 0;
-
   }
-
+  .service-card {
+    width: 170px;
+  }
   .services-agency,
   .services-delegate {
     display: flex;
@@ -238,9 +232,11 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 430px;
+    align-self: center;
   }
 
   .headline-services {
+    margin-top: 0;
     align-self: first baseline;
     text-align: left;
   }
